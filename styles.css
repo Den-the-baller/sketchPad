@@ -1,0 +1,13 @@
+body {
+ display: flex;
+ flex:auto;
+}
+
+.square{
+    border-style: solid;
+    border-color: black;
+    display: flex;
+    min-width: 48px;
+    min-height: 48px;
+
+}
