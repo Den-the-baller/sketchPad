@@ -15,3 +15,7 @@ body{
     min-height: 48px;
 }
 
+.square:hover{
+    background-color: royalblue;
+}
+
