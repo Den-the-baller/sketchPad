@@ -1,21 +1,22 @@
 
+let squareCount = 0;
 let row = 0;
-let column = 0;
 
-const mainDiv = document.querySelector("div")
-while (column < 16 ){    
-    let addDiv = document.createElement("div")
-        addDiv.className = "square column"
-        mainDiv.appendChild(addDiv)
-        console.log("Column added")
-        column++
-        
-    while (row < 16){
-        let addDiv = document.createElement("div")
-        addDiv.className = "square row"
-        mainDiv.appendChild(addDiv)
-        console.log("Row added")
+const mainDiv = document.querySelector(".main")
+while (row < 16 ){    
+    let rowDiv = document.createElement("div")
+        rowDiv.className = "row"
+        console.log("row added")
         row++
+        
+    while (squareCount < 16){
+        // let rowSelect = document.querySelector(".row")
+        let addSquare = document.createElement("div")
+        addSquare.className = "square"
+        rowDiv.appendChild(addSquare)
+        console.log("square added")
+        squareCount++
     }
-    row = 0;
+    mainDiv.appendChild(rowDiv)
+    squareCount = 0;
 }
